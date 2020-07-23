@@ -1,410 +1,625 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Corona Warriors</title>
 
-     <title>Better Health Hackathon #codeforCovid-19</title>
-<!--
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-          better health hackathon #codeforCovid-19
-
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/animate.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/style.css">
-
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+			
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="#">
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body>
+<!-- Begin Hero Bg -->
+<div id="parallax">
+</div>
+<!-- End Hero Bg
+	================================================== -->
 
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-
-               <span class="spinner-rotate"></span>
-               
-          </div>
-     </section>
-
-
-     <!-- HEADER -->
-     <header>
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-5">
-                         <p>Welcome to #codeforCovid-19 website by Team Saat </p>
-                    </div>
-
-               </div>
-          </div>
-     </header>
+  <!-- Modal 
+    =================================================  -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		 
 
 
-     <!-- MENU -->
-     <section class="navbar navbar-default navbar-static-top" role="navigation">
-          <div class="container">
-
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
-
-                    <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand"><span class="fa fa-c"></span></i>orona Warriors </a>
-               </div>
-
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#how-it-works" class="smoothScroll">How it works</a></li>
-                         <li><a href="#faq" class="smoothScroll">FAQ</a></li>
-                         <!-- <li><a href="#team" class="smoothScroll">About</a></li> -->
-                         <li><a href="#news" class="smoothScroll">Latest News</a></li>
-                         <li><a href="#google-map" class="smoothScroll">Hit Map</a></li>
-                         <li class="appointment-btn"><a href="#appointment">Be Corona Worior</a></li>
-                    </ul>
-               </div>
-
-          </div>
-     </section>
-
-
-     <!-- HOME -->
-     <section id="home" class="slider" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                         <div class="owl-carousel owl-theme">
-                              <div class="item item-first">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Anonymously and reliably trace your exposure to COVID-19 to keep yourself and others healthy.</h3>
-                                             <h1>No Personal Information</h1>
-                                             <a href="#appointment" class="section-btn btn btn-default smoothScroll">Be Corona Worior</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-second">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Get an health expert advice</h3>
-                                             <h1>Virus Exposure Warnings</h1>
-                                             <a href="#google-map" class="section-btn btn btn-default btn-gray smoothScroll">See hit map</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-third">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>The best practices for home quarantine of Covid-19 patients</h3>
-                                             <h1>An Expert Explains</h1>
-                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-
-               </div>
-          </div>
-     </section>
-
-
-        <!-- How it workks -->
-        <section id="how-it-works">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6">
-                         <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s"><span class="fa fa-c"></i>orona Woriors is Simple to use</h2>
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <h3>How Corona Wariorrs works?</p>
-                              </div>
-
-          <!-- How Corona Wariorrs works? Step one --->
-
-                         <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                              <img src="images/Visit-Site.jpg" class="img-responsive" alt="">
-                              <figcaption>
-                                   <h4>Visit the website</h4> 
-                              </figcaption>
-                              <p>‎The Website will check how close you are to other people who have Covid-19 Symptoms or Who are Infacted from person. Through this website you can also see the hit of your location.<i>Share this with your friends -Inspire them to become a Corona Worrior and help reducing spread of COVID-19.</i>></p>
-                         </figure>
-
-
-          <!-- How Corona Wariorrs works? Step Two --->
-
-
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/click.jpg" class="img-responsive" alt="">
-                                   <figcaption>
-                                        <h4>Click on "Be Corona Worior"</h4> 
-                                   </figcaption>
-                                   <p>‎Don't worry your location or personal identification will not be reveal to any one. By Just Saying You are Corona Positive OR Negative You can be a Corona Worrior.</i>></p>
-                              </figure>
-
-          <!-- How Corona Wariorrs works? Step three --->
-
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                   <figcaption>
-                                        <h4>That's it. IT JUST WORKS</h4> 
-                                   </figcaption>
-                                   <p>‎-------This need to bee edited--------------</p>
-                              </figure>
-                         </div>
-                    </div>
-                    
-               </div>
-          </div>
-     </section>
-
-
-     
-     <!---FAQ Section-->
-             <!-- How it workks -->
-             <section id="faq">
-               <div class="container">
-                    <div class="row">
-     
-                         <div class="col-md-6 col-sm-6">
-                              <div class="about-info">
-                                   <h2 class="wow fadeInUp" data-wow-delay="0.6s"><span class="fa fa-c"></i>orona Woriors frequently asked questions</h2>
-                                   <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   
-                                   </div>
-     
-               <!-- How Corona Wariorrs works? Step one --->
-     
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h4>Question ......................................... #1</h4> 
-                                   </figcaption>
-                                   <p>‎Answer .............................................. #1</p>
-                              </figure>
-
-                              
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h4>Question ......................................... #2</h4> 
-                                   </figcaption>
-                                   <p>‎Answer .............................................. #2</p>
-                              </figure>
-
-                              
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h4>Question ......................................... #3</h4> 
-                                   </figcaption>
-                                   <p>‎Answer .............................................. #3</p>
-                              </figure>
-
-                              
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h4>Question ......................................... #4</h4> 
-                                   </figcaption>
-                                   <p>‎Answer .............................................. #4</p>
-                              </figure>
-
-
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h4>Question ......................................... #5</h4> 
-                                   </figcaption>
-                                   <p>‎Answer .............................................. #5</p>
-                              </figure>
+			<!-- Create a form here to get User's info and Location -->
 
 
 
-
-                              </div>
-                         </div>
-                         
-                    </div>
-               </div>
-          </section>
-     
-
-
-     <!-- NEWS -->
-     <section id="news" data-stellar-background-ratio="2.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <!-- SECTION TITLE -->
-                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Latest News</h2>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>March 08, 2020</span>
-                                   <h3><a href="news-detail.html">Lorem ipsum dolor sit.</a></h3>
-                                   <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Credit to news agency</h5>
-                                             <p>Author Name</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>February 20, 2020</span>
-                                   <h3><a href="news-detail.html">Lorem ipsum dolor sit.</a></h3>
-                                   <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Credit to news agency</h5>
-                                             <p>Author Name</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>January 27, 2020</span>
-                                   <h3><a href="news-detail.html">Lorem ipsum dolor sit.</a></h3>
-                                   <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Credit to news agency</h5>
-                                             <p>Author Name</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Return</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 
 
-     <!-- MAKE AN APPOINTMENT -->
-     <section id="appointment" data-stellar-background-ratio="3">
-          <div class="container">
-               <div class="row">
+  
+<!-- Start Header
+	================================================== -->
+<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+<div class="container">
+	<div class="navbar-header">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<!-- Your Logo -->
+		<a href="#hero" class="navbar-brand"> Be A Corona Warrior</a>
+	</div>
+	<!-- Start Navigation -->
+	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	<ul class="nav navbar-nav">
+		<li>
+		<a href="#hero">Home</a>
+		</li>
+		<li>
+		<a href="#about">About</a>
+		</li>
+		<li>
+		<a href="#Volunteer">Volunteer</a>
+		</li>
+		<li>
+		<a href="#gallery">Gallery</a>
+		</li>
+		<li>
+		<a href="#slider">Testimonials</a>
+		</li>
+		<li>
+		<a href="#faq">FAQ</a>
+		</li>
+		<li>
+		<a href="#contactarea">Donate</a>
+		</li>
+	</ul>
+	</nav>
+</div>
+</header>
 
-                    <div class="col-md-6 col-sm-6">
-                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
-                    </div>
+<!-- Intro
+	================================================== -->
+<section id="hero" class="section">
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="herotext">
+				<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">Corona <span class="lighter">Warriors </span></h1>
+				<p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+					When we give cheerfully and accept gratefully, everyone is blessed.
+				</p>
+				<p>
+					<a href="#gallery" class="btn btn-default btn-lg wow fadeInLeft" role="button"> View Gallery </a> &nbsp; <a href="#about" class="btn btn-default btn-lg wow fadeInRight" role="button">Find a Cause</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-7">
+		</div>
+	</div>
+</div>
+</section>
+<!-- About
+	================================================== -->
+<section id="about" class="parallax section">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color: #01b0d1;opacity:0.9;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="maintitle">
+					<!-- <h3 class="section-title"><strong>BECOME a <span class="lighter">Corona Warrior</span></strong> to Fight COVID-19 and win a <span class="lighter">Corona Warrior Batch</span> </h3> -->
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
+					<h3 class="section-title"><span class="lighter">BECOME a </span> <strong>Corona Warrior</strong> <span class="lighter">to Fight COVID-19 and win a </span> <strong>Corona Warrior Batch</strong> </h3>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+					<img src="img/intro.svg" alt="">
+					<h3>How to be Corona Warrior <br/>Be Corona Warrior in Three Simple Steps</h3>
+					<div class="text-left">
+						
+						<h4>Step 1: <span class="lighter">Visit the website </span> </h4>
+						
+						<h4>Step 2: <span class="lighter">Click on "Be Corona Worior" and answer few question anonymous </span> </h4>
 
-                              <!-- SECTION TITLE -->
-                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Be a Corona Worrior</h2>
-                              </div>
+						<h4>Step 3: <span class="lighter">Click on Donate tab and let us know whatever you want to donate. May be Food, Online Traing, Shelter or Money Every Signle Peny Counts...  <a href="#Learn-More"></a></button></span> </h4>
 
-                                   <p>Are you a corona Positive:</p>
-                                   <input type="radio" id="male" name="gender" value="male">
-                                   <label for="male">No, I'm not Corona positive😊</label><br>
-                                   <input type="radio" id="female" name="gender" value="female">
-                                   <label for="female">Yes, I'm Corona Positive😢</label><br>
-                              
-                                   <br>
-                                 
-                                   <p>Do you have any COVID-19 symptoms:</p>
-                                   <input type="radio" id="age1" name="age" value="30">
-                                   <label for="age1">No, I Don't have any symptoms</label><br>
-                                   <input type="radio" id="age2" name="age" value="60">
-                                   <label for="age2">Yes, I have COVID-19 symptoms</label><br>  
-               
-                                   <br>
-                                   <br>
-
-                                        <label for="Message">Do You want any help or advise Or any suggestion that you want to give.</label>
-                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                                   </div>
-                              </div>
-                        </form>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- GOOGLE MAP -->
-     <section id="google-map">
-     <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </section>           
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Learn More</button>
 
 
-     <!-- FOOTER -->
-     
+  
 
-                    <div class="col-md-12 col-sm-12 border-top">
-                         <div class="col-md-4 col-sm-6">
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2020 Corona Woriors 
-                                   
-                                   | #codeforCovid19</p>
-                              </div>
-                         </div>
-                    </div>
-     </footer>
+				
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.sticky.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
-     <script src="js/wow.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+				
+		
 
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+					<span class="glyphicon glyphicon-stats"></span>
+					<h3>1.386 Participants</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos dolorum magnam.
+					</p>
+					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+					<span class="glyphicon glyphicon-tree-deciduous"></span>
+					<h3>195 Concerts</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos dolorum magnam.
+					</p>
+					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
+					<span class="glyphicon glyphicon-heart"></span>
+					<h3>268 Sponsors</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos dolorum magnam.
+					</p>
+					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
+					<span class="glyphicon glyphicon-usd"></span>
+					<h3>$5.647 Donated</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos dolorum magnam.
+					</p>
+					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Random
+	================================================== -->
+<section class="parallax section" style="background-image: url(img/random.svg);">
+	<div class="wrapsection">
+	<div class="parallax-overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title justtitle">Participation is everything</h3>
+					<p class="lead bottom0 wow bounceInUp">
+						Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+<!-- Gallery
+	================================================== -->
+<section id="gallery" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.9;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title">Donate Safely and Donate to the Right Person</h3>
+					<p class="lead wow flipInX">
+						Luckily there’s one safe way to offer relief to those most affected by COVID-19 - Corona Worior
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+					<img src="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">This is <b>awesome</b></span> 
+						<span class="camera"><i class="fa fa-camera"></i></span>
+						<div class="clearfix"></div>
+					</div>			
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Great <b>marathon</b></span> 
+						<span class="camera"><i class="fa fa-link"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Running <b>miles</b></span> 
+						<span class="camera"><i class="fa fa-heart"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Young <b>volunteers</b></span> 
+						<span class="camera"><i class="fa fa-tachometer"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Charity <b>concerts</b></span> 
+						<span class="camera"><i class="fa fa-microphone"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/photo-1428908799722-0a74e26ce7f6?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/photo-1428908799722-0a74e26ce7f6?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Generous <b>sponsors</b></span> 
+						<span class="camera"><i class="fa fa-coffee"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Text Carousel
+	================================================== -->
+<section id="slider" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/4.jpg);">
+<div class="wrapsection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="Carousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#Carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#Carousel" data-slide-to="1"></li>
+						<li data-target="#Carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<blockquote>
+								<p class="lead">
+									You have not lived today until you have done something for someone who can never repay you.
+								</p>
+								<small>John Bunyan, Marathon</small>
+							</blockquote>
+						</div>
+						<div class="item">
+							<blockquote>
+								<p class="lead">
+									The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer.
+								</p>
+								<small>Mahatma Gandhi</small>
+							</blockquote>
+						</div>
+						<div class="item">
+							<blockquote>
+								<p class="lead">
+									There is no exercise better for the heart than reaching down and lifting people up.
+								</p>
+								<small>John Holmes, Organizer</small>
+							</blockquote>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#Carousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#Carousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- FAQ
+	================================================== -->
+<section id="faq" class="section">
+<div class="wrapsection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title">frequently asked <span class="wow bounceInRight">questions</span></h3>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deserunt laboriosam facilis ut itaque dolor, ullam id non molestias nemo.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								Lorem ipsum dolor sit? </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus! Ut, eius possimus pariatur ab veniam quia suscipit mollitia? Itaque?
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								Lorem ipsum dolor ? </a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati quam modi, deleniti, repudiandae harum, voluptate eius reprehenderit saepe autem perferendis similique.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								Lorem ipsum dolor sit amet? </a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae maiores quasi tempore qui illum obcaecati, ratione deleniti eveniet, commodi accusantium.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+								Lorem ipsum dolor sit? </a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Sponsors. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+								Lorem ipsum dolor sit amet.? </a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, veritatis dicta provident exercitationem ex repellat fugiat sit illum soluta in facilis voluptas officiis.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+								Lorem, ipsum dolor ? </a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum repellat reprehenderit facilis, est eveniet incidunt ut odio neque unde.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+								Lorem ipsum dolor sit amet ? </a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iusto dicta molestias vero voluptate libero!
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+								Lorem ipsum dolor sit? </a>
+								</h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Routes. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+								Lorem, ipsum dolor? </a>
+								</h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veritatis cumque officiis eveniet fugiat neque sit animi necessitatibus, facilis ullam id.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Random
+	================================================== -->
+<section class="whitecolor parallax section" style="background-image: url(img/love.jpg);">
+<div class="wrapsection">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12 sol-sm-12">
+			<div class="maintitle">
+				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
+				<p class="lead bottom0">
+					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit cupiditate perferendis dolorem molestias. Repellendus dolorum reprehenderit repudiandae deleniti, cumque voluptates fugiat aspernatur ratione. Impedit.
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+<!-- Contact
+	================================================== -->
+<section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.95;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="maintitle">
+					<h3 class="section-title">You Just one step away to become Corona Worior and win a Corona Worior Batch</h3>
+					<p class="lead">
+						If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+					</p>
+				</div>
+				<form id="contact" name="contact" method="post" class="text-left">
+					<fieldset>
+						<div class="row">
+							<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+								<label for="name">Name<span class="required">*</span></label>
+								<input type="text" name="name" id="name" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<label for="email">Email<span class="required">*</span></label>
+								<input type="text" name="email" id="email" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone" size="30" value=""/>
+							</div>
+						</div>
+						<div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+							<label for="message">List what you want to donate<span class="required">*</span></label>
+							<textarea name="message" id="message" required></textarea>
+						</div>
+						<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+							<input id="submit" type="submit" name="submit" value="Send"/>
+						</div>
+					</fieldset>
+				</form>
+				<div id="success">		
+					<p class="contactalert">
+						Your message was sent succssfully! I will be in touch as soon as I can.
+					</p>			
+				</div>
+				<div id="error">			
+					<p class="contactalert">
+						 Something went wrong, try refreshing and submitting the form again.
+					</p>			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Credits 
+=============================================== -->
+<section id="credits" class="text-center">
+	<span class="social wow zoomIn">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-skype"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-pinterest"></i></a>
+	<a href="#"><i class="fa fa-google-plus"></i></a>
+	</span><br/>
+	Copyright &copy; <a href="#">Corona Woriors</a> 
+</section>
+<!-- Bootstrap core JavaScript
+	================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
