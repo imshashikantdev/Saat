@@ -129,6 +129,7 @@ img {
 	text-transform:uppercase;
 	font-size:13px;
 	letter-spacing:3px;
+	position: relative;
 }
 .btn:hover,.btn:focus {
 	outline:none;
@@ -284,6 +285,13 @@ label {
 .input-group {
 	margin-bottom:10px;
 }
+
+/*.fieldset{
+   border: 1px;
+   font-weight:300;
+   size: 40px;
+}*/
+
 .form-control {
 	font-weight:300;
 	border-color:#ecf0f1;
@@ -299,14 +307,14 @@ label {
 	-webkit-transition:all .2s;
 	transition:all .2s;
 }
-.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control,.form-control[disabled]:hover,.form-control[readonly]:hover,fieldset[disabled] .form-control:hover,.form-control[disabled]:focus,.form-control[readonly]:focus,fieldset[disabled] .form-control:focus {
+/*.form-control[disabled],.form-control[readonly],fieldset[enabled] .form-control,.form-control[disabled]:hover,.form-control[readonly]:hover,fieldset[disabled] .form-control:hover,.form-control[disabled]:focus,.form-control[readonly]:focus,fieldset[disabled] .form-control:focus {
 	background-color:#ecf0f1;
-}
+} */
 .form-control:hover,.form-control:focus {
 	outline:none;
 	border-color:#ecf0f1;
 	background-color:#FFF;
-		box-shadow:none;
+	box-shadow:none;
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
 }
@@ -454,7 +462,11 @@ label {
 #hero .btn {
 	font-size:12px;
 	font-weight: bold;
-	background-color: aqua;
+	background-color: rgb(20, 29, 29);
+	position: relative;
+	margin-left: 80px;
+	
+
 }
 /*	Features	==================================================*/
 #features {
@@ -463,6 +475,7 @@ label {
 }
 .maintitle h1 {
 	text-transform:uppercase;
+	/*color: #000;*/
 }
 .maintitle,.service-box {
 	text-align:center;
@@ -615,42 +628,53 @@ label {
 }
 /*	Contact Area	==================================================*/ 
 #contactarea {
-	text-align:center;
+	text-align:justify;
 }
+
 #contactarea .maintitle p.lead {
 	margin-bottom:40px;
 }
 #contactarea form {
-	max-width:800px;
+	max-width:600px;
 	margin:0px auto;
+
 }
+#contactform .btn-lg {
+	padding:10px 15px;
+	height:45px;
+	
+}
+
 #contactarea .input-lg,#contactarea .btn-lg {
-	padding:20px 25px;
-	height:65px;
+	padding:10px 15px;
+	height:45px;
+	
 }
 #contact label {
 	text-transform:uppercase;
 	font-weight:300;
 	 letter-spacing:3px;
 	 font-size:13px;
+	 
 }
 #contact input,#contact select,#contact textarea {
 	font-family:inherit;
 	font-size:inherit;
 	line-height:inherit;
 	width:100%;
-	border:0px;
-	color:#333;
+	color:rgb(14, 13, 13);
 	background-color:#fff;
 	border:0;
+	text-align: justify;
+
 }
 #contact input,#contact select {
-		height:40px;
+	height:30px;
 	margin-bottom:0px;
 }
 #contact input#submit {
 	width:auto;
-	margin-top:20px;
+	margin-top:30px;
 	background-color:rgba(0,0,0,0.3);
 	border:0;
 	color:#fff;
@@ -1138,9 +1162,9 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/ 
-.section {	
+/*.section {	
 	
-}
+} */
 .wrapsection {  
     padding-top:140px;
 	padding-bottom:140px;
@@ -1222,6 +1246,7 @@ img.mfp-img {
 	}
 	h3 {
 					font-size:20px;
+					color: #000;
 	}
 	h4 {
 					font-size:18px;
