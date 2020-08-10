@@ -309,6 +309,23 @@ function parallaxInit() {
     });
 }
 
+/*function getData(){
+    // Create a request variable and assign a new XMLHttpRequest object to it.
+    var request = new XMLHttpRequest()
+     
+    // Open a new connection, using the GET request on the URL endpoint
+    request.open('GET', 'https://api.covid19india.org/v4/data.json', true)
+     
+    request.onload = function () {
+        // Begin accessing JSON data here
+        console.log(data);
+    // }
+     
+    // Send request
+    request.send()
+    }*/
+
+
 function parallax() {
     var scrollPosition = $(window).scrollTop();
     $('#parallax').css('top', (0 - (scrollPosition * 0.3)) + 'px'); // bg image moves at 30% of scrolling speed
