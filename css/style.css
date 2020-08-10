@@ -541,16 +541,25 @@ label {
 #gallery a.btn {
 	display:inline-block;
 }
+
+#chart-container{
+	    float:center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 70px;
+}
 /*	Faq==================================================*/ 
 #faq {
 	background-color:#F9FAFD;
 }
 .faq-block {
 	margin:0px;
+	
 }
 /*	Slider	==================================================*/ 
 #slider {	
 	color:#FFF;
+	height:70%;
 }
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
