@@ -68,8 +68,9 @@
 											<label for="Cured">Are you Cured<span class="required">*</span></label><br><br>
 										<!--</div>-->
 										<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-											<input id="submit" type="submit" name="submit" value="Submit" style="background-color:rgb(58, 56, 56)">
+											<button value="Send" style="background-color:rgb(58, 56, 56)">Submit</button>
 										</div>
+										
 										<div id="success">
 											<p class="contactalert">
 												Thanks for submission!!
@@ -124,7 +125,7 @@
 						<a href="#Volunteer">Volunteer</a>
 					</li>
 					<li>
-						<a href="#gallery">Gallery</a>
+						<a href="#gallery">Statistics</a>
 					</li>
 					<li>
 						<a href="#slider">Testimonials</a>
@@ -282,12 +283,17 @@
 	<section id="gallery" class="parallax section"
 		style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
 		<div class="wrapsection">
-			<div class="parallax-overlay" style="background-color:#bcecec;opacity:0.9;"></div>
+			<div class="parallax-overlay" style="background-color:#d1f0f0;opacity:0.9;"></div>
 			<div class="container">
 				<div class="row">
-
+					
 					<div id="chart-container" style="height:auto; width:100%;"></div>
-					<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+					<h3>Top 5 Covid-19 affected countries (in Lakhs)</h3>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+				    <canvas id="myChart"></canvas>
+
+					<!--
+					<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>-->
 					
 
 					<!--<div class="col-md-12 sol-sm-12">
@@ -670,7 +676,8 @@
 									<textarea name="message" id="message" required></textarea>
 								</div>
 								<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-									<input id="submit" type="submit" name="submit" value="Send" />
+									<!--<input id="submit" type="submit" name="submit" value="Send" />-->
+									<a href="mailto:saat@gmail.com" style="color:rgb(8, 3, 3)">submit</a>
 								</div>
 							</fieldset>
 						</form>
@@ -706,7 +713,7 @@
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/chart.js"></script>
+	<script src="js/Chart.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
