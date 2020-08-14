@@ -27,6 +27,33 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="#">
+	<script>
+		debugger;
+		navigator.geolocation.getCurrentPosition(success);
+		function success(pos) {
+  var crd = pos.coords;
+
+  var y = crd.latitude;
+  var x = crd.longitude;
+  
+}
+		function getLocation(){
+			var isInfected = document.getElementById("Fine").value == "true"?true:false;
+			// const userLocation = {
+			// 	latitude : y,
+			// 	longitude :x,
+			// 	isPossitive : isInfected
+			// };
+			var request = new XMLHttpRequest()
+request.open('GET', 'http://localhost:8080/welcome', true)
+request.onload = function () {
+  // Begin accessing JSON data here
+}
+
+request.send()
+			
+		}
+	</script>
 </head>
 
 <body>
@@ -60,15 +87,15 @@
 								<form id="contactform" name="contactform" method="post" class="text-right"> 
 									<fieldset style="float:center ;text-align:justify;">
 										<!--<div class="List">-->
-											<input type="radio" name="Fine" id="Fine" value="">
+											<input type="radio" name="Fine" id="Fine" value="false">
 											<label for="Fine">Are you Fine<span class="required">*</span></label><br>
-											<input type="radio" name="Infected" id="Infected" value="" >
+											<input type="radio" name="Fine" id="Fine" value="true" >
 											<label for="Infected">Are you Infected<span class="required">*</span></label><br>
-											<input type="radio" name="Cured" id="Cured"  value="" >
+											<input type="radio" name="Fine" id="Fine"  value="false" >
 											<label for="Cured">Are you Cured<span class="required">*</span></label><br><br>
 										<!--</div>-->
 										<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-											<button value="Send" style="background-color:rgb(58, 56, 56)">Submit</button>
+											<button value="Send" style="background-color:rgb(58, 56, 56)" onclick="getLocation()">Submit</button>
 										</div>
 										
 										<div id="success">
